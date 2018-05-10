@@ -5,3 +5,24 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+idea = Idea.create(
+    [
+        {
+            title: "A new cake recipie",
+            body: "Made of chocolate"
+        },
+        {
+            title: "A twitter client idea",
+            body: "Only for replying to mentions and DMs"
+        },
+        {
+            title: "A novel set in Italy",
+            body: "A mafia crime drama"
+        },
+        {
+            title: "Card game design",
+            body: "Like Uno, but involves drinking"
+        }
+    ]
+)
