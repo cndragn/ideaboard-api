@@ -1,24 +1,29 @@
-# README
+# Ideaboard Back End API
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Front End - ideaboard-react repo: https://github.com/cndragn/ideaboard-react
 
-Things you may want to cover:
+Back End - ideaboard-api repo: https://github.com/cndragn/ideaboard-api
 
-* Ruby version
+View live project: http://ideaboard-react.surge.sh/
 
-* System dependencies
+API on Heroku: https://idea-api.herokuapp.com/api/v1/ideas
 
-* Configuration
 
-* Database creation
+## Run locally
+* Clone ideaboard-react repo and cd into it
+    * terminal: `rails s`
+* Clone ideaboard-api repo and cd into it
+    * terminal: `rails db:migrate db:seed`
+    * terminal: `rails s -p 3001`
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Deploy to Heroku
+* Update Gemfile
+    * move gem 'sqlite3' to group :development, :test do 
+    * add gem 'pg'
+    * terminal: `bundle install --without production`
+* Remove Ruby version from all bin files
+* git add and commit
+* terminal: `heroku git:remote -a <heroku app name>`
+* terminal: `git push heroku master`
+* terminal:  `heroku run rails db:migrate`
+* terminal: `heroku run rake db:seed`
