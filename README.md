@@ -1,12 +1,18 @@
 # Ideaboard Back End API
 
-Front End - ideaboard-react repo: https://github.com/cndragn/ideaboard-react
+Demo: http://ideaboard-react.surge.sh/
 
-Back End - ideaboard-api repo: https://github.com/cndragn/ideaboard-api
+API: https://idea-api.herokuapp.com/api/v1/ideas
 
-View live project: http://ideaboard-react.surge.sh/
+Front End repo: https://github.com/cndragn/ideaboard-react
 
-API on Heroku: https://idea-api.herokuapp.com/api/v1/ideas
+![Preview](https://raw.githubusercontent.com/cndragn/ideaboard-react/master/img/version2.png)
+
+## Technologies Used
+
+Ruby on Rails, React, API, Bootstrap, Sass.
+
+Back end API deployed to Heroku, React front end deployed to Surge.sh
 
 
 ## Run locally
@@ -27,3 +33,6 @@ API on Heroku: https://idea-api.herokuapp.com/api/v1/ideas
 * terminal: `git push heroku master`
 * terminal:  `heroku run rails db:migrate`
 * terminal: `heroku run rake db:seed`
+
+### Attributions
+Tutorial: [Learnetto: React JS tutorial make an idea board app](https://learnetto.com/tutorials/rails-5-api-and-react-js-tutorial-how-to-make-an-idea-board-app)
