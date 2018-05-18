@@ -18,11 +18,19 @@ idea = Idea.create(
         },
         {
             title: "A novel set in Italy",
-            body: "A mafia crime drama"
+            body: "A romantic mafia crime drama / comedy"
         },
         {
             title: "Card game design",
-            body: "Like Uno, but involves drinking"
+            body: "A cross between Uno, Goldfish, Poker and Battleship"
+        },
+        {
+            title: "Design new toy for Lincoln",
+            body: "Indestructable chew toy"
+        },
+        {
+            title: "Self cleaning fridge concept",
+            body: "Senses 3-day old food and throws away leftovers"
         }
     ]
 )
