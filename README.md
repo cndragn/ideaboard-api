@@ -33,6 +33,10 @@ Back end API deployed to Heroku, React front end deployed to Surge.sh
 * terminal: `git push heroku master`
 * terminal:  `heroku run rails db:migrate`
 * terminal: `heroku run rake db:seed`
+* Drop and seed database
+    * heroku pg:reset DATABASE_URL
+    * heroku run rake db:migrate  
+    * heroku run rake db:seed
 
 ### Attributions
 Tutorial: [Learnetto: React JS tutorial make an idea board app](https://learnetto.com/tutorials/rails-5-api-and-react-js-tutorial-how-to-make-an-idea-board-app)
